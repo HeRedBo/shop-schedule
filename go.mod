@@ -10,17 +10,27 @@ require (
 )
 
 require (
+	filippo.io/edwards25519 v1.1.0 // indirect
 	github.com/HeRedBo/pkg/cache v0.0.0-20250521224933-16789602bd01 // indirect
 	github.com/HeRedBo/pkg/errors v1.0.0 // indirect
 	github.com/HeRedBo/pkg/es v0.0.0-20250521224933-16789602bd01 // indirect
+	github.com/HeRedBo/pkg/httpclient v0.0.0-20250521224933-16789602bd01 // indirect
 	github.com/HeRedBo/pkg/logger v0.0.0-20250521224933-16789602bd01 // indirect
 	github.com/HeRedBo/pkg/nosql v0.0.0-20250521224933-16789602bd01 // indirect
 	github.com/HeRedBo/pkg/shutdown v0.0.0-20250521224933-16789602bd01 // indirect
+	github.com/HeRedBo/pkg/sign v0.0.0-20250521224933-16789602bd01 // indirect
+	github.com/HeRedBo/pkg/strutil v0.0.0-20250521224933-16789602bd01 // indirect
+	github.com/HeRedBo/pkg/timeutil v0.0.0-20250518092132-658893059cf6 // indirect
+	github.com/HeRedBo/pkg/trace v0.0.0-20250518050431-4d871bc5b716 // indirect
 	github.com/fastly/go-utils v0.0.0-20180712184237-d95a45783239 // indirect
 	github.com/go-redis/redis/v7 v7.4.1 // indirect
+	github.com/go-sql-driver/mysql v1.8.1 // indirect
 	github.com/go-viper/mapstructure/v2 v2.2.1 // indirect
 	github.com/golang/snappy v0.0.4 // indirect
+	github.com/google/uuid v1.6.0 // indirect
 	github.com/jehiah/go-strftime v0.0.0-20171201141054-1d33003b3869 // indirect
+	github.com/jinzhu/inflection v1.0.0 // indirect
+	github.com/jinzhu/now v1.1.5 // indirect
 	github.com/jonboulle/clockwork v0.5.0 // indirect
 	github.com/josharian/intern v1.0.0 // indirect
 	github.com/klauspost/compress v1.13.6 // indirect
@@ -50,4 +60,7 @@ require (
 	golang.org/x/text v0.21.0 // indirect
 	gopkg.in/natefinch/lumberjack.v2 v2.2.1 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
+	gorm.io/datatypes v1.2.5 // indirect
+	gorm.io/driver/mysql v1.5.6 // indirect
+	gorm.io/gorm v1.25.11 // indirect
 )
