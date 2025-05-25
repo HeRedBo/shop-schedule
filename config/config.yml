@@ -1,0 +1,44 @@
+app:
+  domain: localhost
+  run_mode: dev
+  time_format: 20060102
+  runtime_root_path: 'runtime/'
+  log_save_path: 'logs/'
+  log_save_name: 'log'
+  log_file_ext: 'log'
+  task: 'order-rebuild'
+
+database:
+  type: 'mysql'
+  user: 'root'
+  password: 'admin123'
+  host: '127.0.0.1:3306'
+  name: 'shop'
+  table_prefix:
+
+mongodb:
+  dbname: shop
+  user: admin
+  password: admin123
+  host: ["127.0.0.1:27017"]
+
+redis:
+  host: '127.0.0.1:6379'
+  password: 123456
+  idle_timeout: 200
+
+elasticsearch:
+  hosts: ["http://127.0.0.1:9200"]
+  username: "elastic"
+  password: "elastic"
+
+zap:
+  log-filepath: 'runtime/logs'
+  log-info-filename: 'info'
+  log-warn-filename: 'warn'
+  log-fiile-ext: 'log'
+
+api:
+  order-ak: 'AK20220808327988'
+  order-sk: 'xOBYfykyFVixXFziF8XN5F9crzpC0XrW'
+  shop-host: 'http://127.0.0.1:8000'
