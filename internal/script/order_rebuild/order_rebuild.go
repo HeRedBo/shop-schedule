@@ -38,8 +38,7 @@ func Rebuild(userID string) {
 		params := url.Values{}
 		params.Add("next_id", nextID)
 		uri := GetOrdersUri + "/" + userID
-		authorization, date, err := sign.New(global.CONFIG.Api.OrderAK,
-			global.CONFIG.Api.OrderSK, time.Minute*3).Generate(uri, http.MethodGet, params)
+		authorization, date, err := sign.New(global.CONFIG.Api.OrderAK, global.CONFIG.Api.OrderSK, time.Minute*3).Generate(uri, http.MethodGet, params)
 		if err != nil {
 			global.LOG.Error("sign.New error", err, params)
 			return
@@ -86,8 +85,7 @@ func Rebuild(userID string) {
 			}
 			fmt.Println("index", index)
 			esClient := es.GetClient(es.DefaultClient)
-			esClient.Create(context.Background(), global.IndexName, index.OrderId,
-				strutil.Int64ToString(index.Uid), index)
+			esClient.Create(context.Background(), global.IndexName, index.OrderId, strutil.Int64ToString(index.Uid), index)
 		}
 
 		if res.Data.NextID == 0 {
@@ -95,7 +93,6 @@ func Rebuild(userID string) {
 		} else {
 			nextID = strutil.Int64ToString(res.Data.NextID)
 		}
-
 	}
 	global.LOG.Warn("rebuild over cost", time.Since(t).Seconds())
 }
