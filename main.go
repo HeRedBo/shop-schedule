@@ -10,6 +10,7 @@ import (
 	"github.com/go-redis/redis/v7"
 	"go.uber.org/zap"
 	"shop-schedule/global"
+	"shop-schedule/internal/script/order_rebuild"
 )
 
 func init() {
@@ -64,7 +65,7 @@ func main() {
 	case "product-search-log":
 		//product_searchlog.AnalysisSearchLog()
 	case "order-rebuild":
-		//order_rebuild.Rebuild("4")
+		order_rebuild.Rebuild("3")
 
 	}
 	//优雅关闭

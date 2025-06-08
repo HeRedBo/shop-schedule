@@ -3,31 +3,34 @@ module shop-schedule
 go 1.23.2
 
 require (
+	github.com/HeRedBo/pkg/cache v0.0.0-20250521224933-16789602bd01
+	github.com/HeRedBo/pkg/es v0.0.0-20250521224933-16789602bd01
+	github.com/HeRedBo/pkg/httpclient v0.0.0-20250521224933-16789602bd01
+	github.com/HeRedBo/pkg/logger v0.0.0-20250521224933-16789602bd01
+	github.com/HeRedBo/pkg/nosql v0.0.0-20250521224933-16789602bd01
+	github.com/HeRedBo/pkg/shutdown v0.0.0-20250521224933-16789602bd01
+	github.com/HeRedBo/pkg/sign v0.0.0-20250521224933-16789602bd01
+	github.com/HeRedBo/pkg/strutil v0.0.0-20250521224933-16789602bd01
 	github.com/fsnotify/fsnotify v1.8.0
+	github.com/go-redis/redis/v7 v7.4.1
+	github.com/gookit/goutil v0.6.18
 	github.com/lestrrat/go-file-rotatelogs v0.0.0-20180223000712-d3151e2a480f
 	github.com/spf13/viper v1.20.1
 	go.uber.org/zap v1.27.0
+	gorm.io/datatypes v1.2.5
 )
 
 require (
 	filippo.io/edwards25519 v1.1.0 // indirect
-	github.com/HeRedBo/pkg/cache v0.0.0-20250521224933-16789602bd01 // indirect
 	github.com/HeRedBo/pkg/errors v1.0.0 // indirect
-	github.com/HeRedBo/pkg/es v0.0.0-20250521224933-16789602bd01 // indirect
-	github.com/HeRedBo/pkg/httpclient v0.0.0-20250521224933-16789602bd01 // indirect
-	github.com/HeRedBo/pkg/logger v0.0.0-20250521224933-16789602bd01 // indirect
-	github.com/HeRedBo/pkg/nosql v0.0.0-20250521224933-16789602bd01 // indirect
-	github.com/HeRedBo/pkg/shutdown v0.0.0-20250521224933-16789602bd01 // indirect
-	github.com/HeRedBo/pkg/sign v0.0.0-20250521224933-16789602bd01 // indirect
-	github.com/HeRedBo/pkg/strutil v0.0.0-20250521224933-16789602bd01 // indirect
 	github.com/HeRedBo/pkg/timeutil v0.0.0-20250518092132-658893059cf6 // indirect
 	github.com/HeRedBo/pkg/trace v0.0.0-20250518050431-4d871bc5b716 // indirect
 	github.com/fastly/go-utils v0.0.0-20180712184237-d95a45783239 // indirect
-	github.com/go-redis/redis/v7 v7.4.1 // indirect
 	github.com/go-sql-driver/mysql v1.8.1 // indirect
 	github.com/go-viper/mapstructure/v2 v2.2.1 // indirect
 	github.com/golang/snappy v0.0.4 // indirect
 	github.com/google/uuid v1.6.0 // indirect
+	github.com/gookit/color v1.5.4 // indirect
 	github.com/jehiah/go-strftime v0.0.0-20171201141054-1d33003b3869 // indirect
 	github.com/jinzhu/inflection v1.0.0 // indirect
 	github.com/jinzhu/now v1.1.5 // indirect
@@ -51,6 +54,7 @@ require (
 	github.com/xdg-go/pbkdf2 v1.0.0 // indirect
 	github.com/xdg-go/scram v1.1.2 // indirect
 	github.com/xdg-go/stringprep v1.0.4 // indirect
+	github.com/xo/terminfo v0.0.0-20220910002029-abceb7e1c41e // indirect
 	github.com/youmark/pkcs8 v0.0.0-20240726163527-a2c0da244d78 // indirect
 	go.mongodb.org/mongo-driver v1.17.1 // indirect
 	go.uber.org/multierr v1.10.0 // indirect
@@ -60,7 +64,6 @@ require (
 	golang.org/x/text v0.21.0 // indirect
 	gopkg.in/natefinch/lumberjack.v2 v2.2.1 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
-	gorm.io/datatypes v1.2.5 // indirect
 	gorm.io/driver/mysql v1.5.6 // indirect
 	gorm.io/gorm v1.25.11 // indirect
 )
